@@ -90,7 +90,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
           appBar: AppBar(title: Text("Flutter Demo")),
-          body: Column(
+          body: ListView(
             children: [
               Image.asset(
                 'images/lake.jpg',
