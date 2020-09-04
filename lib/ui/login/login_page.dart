@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:tapiten_app/ui/login/login_view_model.dart';
+import 'package:basic_flutter_ui/ui/login/login_view_model.dart';
 
 class LoginPage extends StatelessWidget {
   @override
