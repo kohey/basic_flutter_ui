@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:basic_flutter_ui/ui/login/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -88,21 +89,25 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: Scaffold(
-          appBar: AppBar(title: Text("Flutter Demo")),
-          body: ListView(
-            children: [
-              Image.asset(
-                'images/lake.jpg',
-                width: 600,
-                height: 240,
-                fit: BoxFit.cover,
-              ),
-              titleSection,
-              buttonSection,
-              textSection,
-            ],
-          )),
+      routes: <String, WidgetBuilder>{
+        "/": (BuildContext context) => LoginPage(),
+        // "/home": (BuildContext context) => HomePage(),
+      },
+      // home: Scaffold(
+      //     appBar: AppBar(title: Text("Flutter Demo")),
+      //     body: ListView(
+      //       children: [
+      //         Image.asset(
+      //           'images/lake.jpg',
+      //           width: 600,
+      //           height: 240,
+      //           fit: BoxFit.cover,
+      //         ),
+      //         titleSection,
+      //         buttonSection,
+      //         textSection,
+      //       ],
+      //     )),
     );
   }
 
