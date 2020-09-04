@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:basic_flutter_ui/ui/login/login_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -88,6 +89,9 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      routes: <String, WidgetBuilder>{
+        "/": (BuildContext context) => LoginPage(),
+      },
       home: Scaffold(
           appBar: AppBar(title: Text("Flutter Demo")),
           body: ListView(
