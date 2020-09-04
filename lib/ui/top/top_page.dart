@@ -9,17 +9,9 @@ class TopPage extends StatelessWidget {
       child: MaterialApp(
           title: 'タイトル',
           home: Scaffold(
-              // body: Container(
-              // child: Center(
-              //   child: Column(children:<Widget> [
-              //     TopPageIcon(),
-              //     // TopPageStartButton()
-              //   ]),
-              // ),
-              // ),
               body: Container(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 TopPageIcon(),
                 TopPageStartButton(),
